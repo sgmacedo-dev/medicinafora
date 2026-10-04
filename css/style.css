@@ -482,3 +482,28 @@ h1, h2, h3, .brand-title, .price {
   color: var(--muted);
   font-size: .92rem;
 }
+
+.footer-credit {
+  margin-top: .85rem;
+  font-family: var(--serif, Fraunces, serif);
+  font-size: 1.05rem;
+  color: #f7f1e8;
+}
+.footer-credit .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.site-footer {
+  padding: 3rem 0 2.4rem;
+}
+.footer-note {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
