@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagamento recebido | Medicina Fora</title>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<main>
+  <h1>Pagamento recebido</h1>
+  <p id="msg">Conferindo o Pix.</p>
+  <p><a id="baixar" hidden>Baixar o guia</a></p>
+  <p><a href="../">Voltar ao livro</a></p>
+</main>
+<script>
+const params = new URLSearchParams(location.search);
+const id = params.get("payment_id") || params.get("collection_id");
+const msg = document.getElementById("msg");
+const link = document.getElementById("baixar");
+if (!id) {
+  msg.textContent = "O Pix ainda pode estar caindo. O arquivo segue para o e-mail que você informou no Mercado Pago.";
+} else {
+  link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/baixar?payment_id=" + encodeURIComponent(id);
+  link.hidden = false;
+  msg.textContent = "Se o Pix já foi aprovado, o botão baixa o guia. O mesmo arquivo segue para o e-mail informado no Mercado Pago.";
+}
+</script>
+</body>
+</html>
