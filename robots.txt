@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sgmacedo-dev.github.io/medicinafora/sitemap.xml
