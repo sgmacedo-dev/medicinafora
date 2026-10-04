@@ -550,3 +550,97 @@ a.compare-row:hover { color: inherit; background: rgba(255,253,248,.7); }
 @media (min-width: 800px) {
   .ebook-row { grid-template-columns: 220px 1fr; }
 }
+
+/* Home: comparação em cartaz, não em tabela */
+.stage {
+  background: var(--surface);
+  border: 8px solid var(--accent);
+  border-radius: 32px;
+  padding: 1.6rem 1.3rem 1.3rem;
+  box-shadow: var(--shadow);
+}
+@media (min-width: 800px) {
+  .stage { padding: 2.4rem 2.6rem 1.8rem; }
+}
+.stage-top {
+  display: grid;
+  gap: 1rem 2rem;
+  align-items: end;
+}
+@media (min-width: 860px) {
+  .stage-top { grid-template-columns: 1.25fr .75fr; }
+}
+.hero .stage .eyebrow {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 520;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  margin-bottom: .35rem;
+}
+.hero .stage h1 {
+  font-size: clamp(2.7rem, 6.4vw, 4.8rem);
+  line-height: .96;
+  max-width: 12ch;
+  margin-bottom: 0;
+}
+.hero .stage h1 .quiet {
+  color: var(--muted);
+  font-weight: 520;
+}
+.stage .hero-lead {
+  margin: 0;
+  font-size: 1.12rem;
+  max-width: 28ch;
+}
+@media (min-width: 860px) {
+  .stage .hero-lead { justify-self: end; text-align: left; padding-bottom: .35rem; }
+}
+.lanes { margin-top: 1.8rem; }
+.lane {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .15rem .1rem;
+  padding: 1.15rem 0 1.25rem;
+  border-top: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+}
+.lane-place {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.2vw, 3.15rem);
+  line-height: 1;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+}
+.lane-num {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.05;
+  color: var(--bordeaux);
+}
+.lane-num-long {
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  max-width: 14rem;
+  line-height: 1.15;
+}
+.lane-note {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 42rem;
+  margin-top: .25rem;
+}
+@media (min-width: 760px) {
+  .lane {
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    column-gap: 1.5rem;
+  }
+  .lane-note { grid-column: 1 / -1; }
+  .lane-num, .lane-num-long { text-align: right; }
+  .lane-shift { margin-left: 6%; }
+  .lane-shift-more { margin-left: 12%; }
+}
+.lane:hover .lane-place { color: var(--bordeaux); }
+.lane:focus-visible { outline-offset: 6px; border-radius: 12px; }
