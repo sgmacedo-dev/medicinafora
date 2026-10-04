@@ -85,31 +85,23 @@
     </section>
 
     <section class="section">
-      <h2>Como a entrega vai funcionar</h2>
-      <p>O desenho é este. O pagamento ainda não está ligado.</p>
+      <h2>Como receber</h2>
       <ol class="flow">
-        <li><strong>Você escolhe</strong> o guia de R$&nbsp;5.</li>
-        <li><strong>Deixa o e-mail</strong> onde o arquivo deve chegar.</li>
-        <li><strong>Paga no Pix</strong> quando a cobrança existir.</li>
-        <li><strong>O link sai sozinho</strong> depois que o pagamento for confirmado.</li>
+        <li><strong>Copie a chave Pix</strong> e envie R$&nbsp;5 para Silvana Gomes Macedo.</li>
+        <li><strong>Confira o nome</strong> no comprovante.</li>
+        <li><strong>Guarde o comprovante</strong> e o e-mail onde quer o arquivo.</li>
+        <li><strong>O arquivo segue</strong> quando o Pix aparece na conta. A página, sozinha, não vê o extrato.</li>
       </ol>
     </section>
 
-    <!-- PIX: sem conta. Próximo gancho real: checkout Mercado Pago (ou similar). O webhook marca o pedido como pago; aí o site envia o arquivo por e-mail. Até existir a chave, este botão não entrega o e-book. -->
     <section class="section" id="pagar">
-      <form class="checkout" id="pix-form" novalidate>
-        <p class="eyebrow">Pedido</p>
-        <h2>Pagar R$&nbsp;5 no Pix</h2>
-        <p>Deixe o e-mail do lead. O botão mostra o fluxo. Ele <strong>não</strong> cobra e <strong>não</strong> libera o arquivo.</p>
-        <div class="field">
-          <label for="lead-email">E-mail para o arquivo</label>
-          <input id="lead-email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="voce@email.com">
-        </div>
-        <button class="btn btn-pay" type="submit">Pagar R$ 5 no Pix</button>
-        <p class="pay-status" id="pix-status" role="status" hidden></p>
-        <p class="fine">Não há chave Pix, QR Code nem conta de pagamento neste site. Nenhum valor é recebido aqui.</p>
-      </form>
-      <p class="disclaimer" role="note"><strong>Aviso:</strong> Conteúdo informativo. Não substitui consultoria jurídica, acadêmica ou de agência. Valores e editais mudam — confira as fontes oficiais nas páginas dos países. Sem promessa de diploma automático, vaga garantida ou “Revalida fácil”.</p>
+      <h2>Pagar R$ 5 no Pix</h2>
+      <p>O valor cai na conta de <strong>Silvana Gomes Macedo</strong>, Banco do Brasil. Chave Pix, CPF: <strong>410.755.442-20</strong>. No app do seu banco, escolha Pix, cole essa chave e envie R$ 5,00. No comprovante, o nome da favorecida precisa ser esse.</p>
+      <p>Guarde o comprovante e o e-mail em que você quer receber o arquivo. A entrega automática, sozinha, ainda não está ligada: esta página não enxerga o extrato do banco. Quando o Pix aparecer na conta, o arquivo segue para o e-mail que você informar.</p>
+      <p><button class="btn btn-pay" type="button" id="copy-pix">Copiar chave Pix</button> <span id="pix-status" hidden></span></p>
+      <aside class="pitch wise-pitch">
+        <p><strong>Dinheiro no dia a dia fora.</strong> A Wise costuma ter câmbio melhor que o do banco e um cartão aceito em grande parte do mundo. <a href="https://wise.com/invite/ahpc/silvanag203" rel="noopener noreferrer">Abrir conta na Wise</a>. É um link de convite.</p>
+      </aside>
     </section>
   </div>
 </main>

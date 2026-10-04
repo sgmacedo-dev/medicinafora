@@ -8,21 +8,19 @@
     });
   }
 
-  var form = document.getElementById("pix-form");
+  var copy = document.getElementById("copy-pix");
   var status = document.getElementById("pix-status");
-  if (!form || !status) return;
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    var input = document.getElementById("lead-email");
-    var email = input && input.value ? input.value.trim() : "";
-    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    status.hidden = false;
-    if (!ok) {
-      status.textContent = "Escreva um e-mail válido. Nada foi cobrado e o e-book não foi enviado.";
-      if (input) input.focus();
-      return;
+  if (!copy || !status) return;
+  copy.addEventListener("click", function () {
+    var key = "410.755.442-20";
+    function done() {
+      status.hidden = false;
+      status.textContent = "Chave copiada. No app do banco, Pix, colar, R$ 5,00. O nome tem de ser Silvana Gomes Macedo.";
     }
-    status.textContent = "O Pix ainda não está ligado. Nenhum pagamento foi criado e o e-book não foi enviado. O e-mail ficou só neste navegador: não gravamos lead nem arquivo. Quando houver Mercado Pago (ou similar), o webhook marca o pedido como pago e só então o site manda o arquivo.";
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(key).then(done, done);
+    } else {
+      done();
+    }
   });
 })();
