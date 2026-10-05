@@ -8,12 +8,23 @@
 <link rel="stylesheet" href="../../../css/style.css">
 </head>
 <body>
-<main class="container" style="padding:3rem 0;max-width:40rem">
-  <p class="eyebrow">Medicina Fora</p>
+<main class="container section" style="padding-top:2.5rem;max-width:40rem">
   <h1>Pagamento recebido</h1>
-  <p id="msg">Se o Pix for aprovado, o PDF de <strong>10 dicas para faturar, mesmo com a agenda lotada</strong> chega no e-mail que você informou no Mercado Pago. Por enquanto o envio deste livro é por e-mail — não há download instantâneo nesta página.</p>
-  <p>Confira também a caixa de spam. Qualquer dúvida, responda o e-mail da Silvana Gomes Macedo.</p>
-  <p><a class="btn" href="../">Voltar ao livro</a></p>
+  <p id="msg">Se o Pix for aprovado, o PDF de <strong>10 dicas para faturar, mesmo com a agenda lotada</strong> chega no e-mail que você informou no Mercado Pago. Esse é o caminho principal.</p>
+  <p><a class="btn" id="baixar" hidden>Baixar o PDF (bônus)</a></p>
+  <p>Confira também a caixa de spam. Qualquer dúvida, escreva para silvanagomesmacedo.dev.br@gmail.com.</p>
+  <p><a href="../../carrinho/">Levar mais e-books</a> · <a href="../">Voltar a este livro</a></p>
 </main>
+<script>
+const params = new URLSearchParams(location.search);
+const id = params.get("payment_id") || params.get("collection_id");
+const link = document.getElementById("baixar");
+const msg = document.getElementById("msg");
+if (id) {
+  link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/baixar?payment_id=" + encodeURIComponent(id);
+  link.hidden = false;
+  msg.textContent = "Se o Pix já foi aprovado, o PDF de 10 dicas para faturar, mesmo com a agenda lotada segue para o e-mail do Mercado Pago. O botão tenta o download bônus.";
+}
+</script>
 </body>
 </html>

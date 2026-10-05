@@ -5,13 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pagamento recebido | Medicina Fora</title>
 <meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-<main>
+<main class="container section" style="padding-top:2.5rem;max-width:40rem">
+  <p class="eyebrow">Medicina Fora</p>
   <h1>Pagamento recebido</h1>
   <p id="msg">Conferindo o Pix.</p>
-  <p><a id="baixar" hidden>Baixar o guia</a></p>
-  <p><a href="../">Voltar ao livro</a></p>
+  <p><a class="btn" id="baixar" hidden>Baixar o guia (bônus)</a></p>
+  <p class="price-note">O caminho principal é o <strong>e-mail do Mercado Pago</strong>: quando o Pix for aprovado, o(s) PDF(s) seguem para lá. Confira também o spam.</p>
+  <p><a href="../carrinho/">Levar mais e-books</a> · <a href="../">Voltar ao catálogo</a></p>
 </main>
 <script>
 const params = new URLSearchParams(location.search);
@@ -19,11 +25,11 @@ const id = params.get("payment_id") || params.get("collection_id");
 const msg = document.getElementById("msg");
 const link = document.getElementById("baixar");
 if (!id) {
-  msg.textContent = "O Pix ainda pode estar caindo. O arquivo segue para o e-mail que você informou no Mercado Pago.";
+  msg.textContent = "O Pix ainda pode estar caindo. O(s) arquivo(s) seguem para o e-mail que você informou no Mercado Pago.";
 } else {
   link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/baixar?payment_id=" + encodeURIComponent(id);
   link.hidden = false;
-  msg.textContent = "Se o Pix já foi aprovado, o botão baixa o guia. O mesmo arquivo segue para o e-mail informado no Mercado Pago.";
+  msg.textContent = "Se o Pix já foi aprovado, o e-mail com o(s) PDF(s) é o principal. O botão abaixo tenta o download bônus (um arquivo por vez; pedidos com vários livros lembram o e-mail).";
 }
 </script>
 </body>
