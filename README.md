@@ -3,8 +3,8 @@
 Hub editorial estático para brasileiros que consideram estudar medicina no Paraguai, Bolívia e Argentina.
 
 **Marca:** Medicina Fora  
-**Domínio futuro:** https://medicinafora.site (Namecheap — DNS ainda não apontado)  
-**Preview (GitHub Pages):** https://sgmacedo-dev.github.io/medicinafora/
+**Domínio:** https://medicinafora.site (Namecheap → GitHub Pages, arquivo `CNAME`)  
+**Endereço antigo:** https://sgmacedo-dev.github.io/medicinafora/ (redireciona para o domínio)
 
 ## Rotas
 
@@ -20,5 +20,5 @@ HTML/CSS/JS vanilla, mobile-first. Sem AdSense no staging (sem página de privac
 
 ## Canonical
 
-Staging usa `https://sgmacedo-dev.github.io/medicinafora/...`. No cutover para `medicinafora.site`, trocar canonicals/sitemap/robots.
+Canonical, og:url, sitemap e robots usam `https://medicinafora.site/...` (cutover feito em 2026-10-05).
 

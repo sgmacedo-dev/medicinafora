@@ -2,13 +2,13 @@
 2026-10-05 · revisão pedida pela Silvana via CoS
 Não publicar. Sem estatística inventada. Sem promessa de renda, vaga, diploma ou Revalida. Sem escassez falsa.
 Fatos: 4 e-books, R$ 5,20 cada, Pix Mercado Pago, PDF no e-mail. 4 juntos = R$ 20,80 (4 × 5,20, NÃO é desconto).
-Carrinho: https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+Carrinho: https://medicinafora.site/ebook/carrinho/
 
 LPs:
-- Plano para morar fora: https://sgmacedo-dev.github.io/medicinafora/ebook/
-- A casa pronta: https://sgmacedo-dev.github.io/medicinafora/ebook/casa-pronta/
-- Chegar inteiro: https://sgmacedo-dev.github.io/medicinafora/ebook/chegar-inteiro/
-- 10 dicas para faturar: https://sgmacedo-dev.github.io/medicinafora/ebook/10-dicas/
+- Plano para morar fora: https://medicinafora.site/ebook/
+- A casa pronta: https://medicinafora.site/ebook/casa-pronta/
+- Chegar inteiro: https://medicinafora.site/ebook/chegar-inteiro/
+- 10 dicas para faturar: https://medicinafora.site/ebook/10-dicas/
 
 ---
 
@@ -24,7 +24,7 @@ Medicina Fora é pra quem decidiu não ficar. Pra quem cansou de esperar vaga na
 No site você compara os três países de graça. Nos e-books você pega o que ninguém entrega pronto: plano de mudança, casa resolvida, rotina segura e renda extra que cabe na agenda lotada.
 Quatro e-books. R$ 5,20 cada. Os quatro dão R$ 20,80, que não paga nem a pizza de domingo.
 Pix, PDF no e-mail, e você começa hoje.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 ---
 
@@ -35,7 +35,7 @@ R$ 20,80 não paga a pizza de domingo.
 Paga os quatro guias que deixam você pronto(a) pra estudar medicina fora: mudança, casa, segurança e grana.
 Você vai trocar de país. Não dá pra ir no improviso.
 Lembra do que te faz feliz. Fala dos teus sonhos. Alimenta o que te fortalece. Não deixa o mundo te engolir.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 ### 2 — O mundo mudou
 O mundo mudou. O jeito de ganhar dinheiro também.
@@ -43,7 +43,7 @@ Quem não se adaptar vai ter muita dificuldade. Simples assim.
 Quatro e-books pra você se mexer agora: sair do país, montar a casa, andar seguro(a) e fazer renda no intervalo.
 R$ 5,20 cada.
 Lembra do que te faz feliz. Fala dos teus sonhos. Alimenta o que te fortalece. Não deixa o mundo te engolir.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 ### 3 — Para de pesquisar
 Você já leu 40 posts sobre estudar medicina fora e continua no mesmo lugar.
@@ -51,7 +51,7 @@ Chega de pesquisar. Começa a resolver.
 Plano de mudança, contrato de aluguel, rotina segura e grana com agenda lotada.
 R$ 5,20 cada. Os quatro por menos que a pizza do domingo.
 Lembra do que te faz feliz. Fala dos teus sonhos. Alimenta o que te fortalece. Não deixa o mundo te engolir.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 ### 4 — Não é só pra quem tem 18
 Renda extra não tem idade.
@@ -59,14 +59,14 @@ Tem gente gravando o caminho até a aula de sociologia. Tem vó gravando o borda
 O mundo mudou pra todo mundo. As 10 dicas também.
 R$ 5,20.
 Lembra do que te faz feliz. Fala dos teus sonhos. Alimenta o que te fortalece. Não deixa o mundo te engolir.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/10-dicas/
+👉 https://medicinafora.site/ebook/10-dicas/
 
 ### 5 — Curto pra Stories / Reels
 Adapta ou fica pra trás.
 4 e-books · R$ 5,20 cada · PDF no e-mail.
 Menos que a pizza do domingo.
 Lembra do que te faz feliz. Fala dos teus sonhos. Alimenta o que te fortalece. Não deixa o mundo te engolir.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 ---
 
@@ -75,22 +75,22 @@ Lembra do que te faz feliz. Fala dos teus sonhos. Alimenta o que te fortalece. N
 ### Plano para morar fora: como se organizar!
 **About:** A conversa da véspera, no papel. Mala enxuta, primeira semana e o plano pra você chegar sabendo o que fazer.
 **Pitch:** Você vai mudar de país e ainda não sabe o que cabe na mala? Quem vai sem plano paga caro depois. R$ 5,20 e você sai com o seu.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/
+👉 https://medicinafora.site/ebook/
 
 ### A casa pronta: o que resolver antes de morar fora
 **About:** Sua primeira casa só sua. Contrato, caução, contas, internet e a pasta de documentos certa, antes de assinar qualquer coisa.
 **Pitch:** Contrato em outro idioma, caução, conta de luz no nome de quem? Assinar sem entender é jogar dinheiro fora. Resolve antes. R$ 5,20.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/casa-pronta/
+👉 https://medicinafora.site/ebook/casa-pronta/
 
 ### Chegar inteiro: segurança no dia a dia fora
 **About:** Segurança sem paranoia. Rua, celular, dinheiro e chave, com hábitos simples pra você viver tranquilo(a) na cidade nova.
 **Pitch:** Cidade nova, celular no bolso, cartão na mão. Quem chega distraído(a) aprende do jeito difícil. Aprende antes, por R$ 5,20.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/chegar-inteiro/
+👉 https://medicinafora.site/ebook/chegar-inteiro/
 
 ### 10 dicas para faturar, mesmo com a agenda lotada
 **About:** O mundo mudou e o jeito de ganhar dinheiro também. Dez ideias de renda que cabem no intervalo da faculdade, ou da vida. Serve pra quem tem 18 e pra quem chegou na melhor idade e precisa reforçar a renda. Sem promessa milagrosa.
 **Pitch:** Quem não se adaptar vai ter muita dificuldade. Tem gente gravando o caminho pra aula de letras. Tem vó gravando o bordado pra neta. A agenda tá lotada, mas o intervalo existe. 10 ideias pra usar ele. R$ 5,20, menos que a pizza do domingo.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/10-dicas/
+👉 https://medicinafora.site/ebook/10-dicas/
 
 ---
 Notas
@@ -123,7 +123,7 @@ manda o link 👀
 
 **Legenda do post/ad:**
 Conversa ilustrativa. 4 e-books · R$ 5,20 cada · PDF no e-mail.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 Notas
 - A Bia não diz que "o guia mudou a vida" nem fala de resultado. Só de preço e do que tem dentro, que são fatos.
@@ -153,7 +153,7 @@ Que bom! Bons estudos 🩺
 
 **Legenda do post/ad:**
 Simulação. 4 e-books · R$ 5,20 cada · PDF no e-mail.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 Notas
 - O cliente só fala do que é fato (PDF no e-mail, 4 × R$ 5,20, temas dos guias). Não fala de vaga, renda ou resultado.
@@ -168,17 +168,17 @@ Pedido CoS 2026-10-05. Ilustração, sem pessoa real. Frase-base da Silvana: "vo
 **Opção A (mais fiel à frase-base)**
 Headline na arte: Vou levar os quatro. Eu mereço não sofrer à toa.
 Caption: Mudança, casa, segurança e grana resolvidas antes de embarcar. R$ 5,20 cada. Os quatro dão R$ 20,80, que não paga nem a pizza de domingo.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 **Opção B (mais agressiva)**
 Headline na arte: Esforço desnecessário? Não nessa vida.
 Caption: Vou estudar medicina fora e não vou aprender tudo apanhando. Vou pegar os 4 guias por R$ 20,80, menos que a pizza de domingo.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 **Opção C (curta, pra Stories/Reels)**
 Headline na arte: Os quatro. Porque eu mereço o atalho.
 Caption: 4 e-books · R$ 5,20 cada · PDF no e-mail.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 Notas
 - POV de quem vai comprar, sem dizer que alguém comprou. Não é depoimento, então não precisa do selo de simulação.
@@ -228,7 +228,7 @@ Extra! Lançaram 4 e-books pra quem vai estudar medicina fora: plano de mudança
 R$ 5,20 cada. Os quatro dão R$ 20,80, que não paga nem a pizza de domingo. PDF no e-mail.
 Para de perder tempo com o que dá pra resolver em uma noite. Vai viver.
 Lembra do que te faz feliz. Fala dos teus sonhos. Alimenta o que te fortalece. Não deixa o mundo te engolir.
-👉 https://sgmacedo-dev.github.io/medicinafora/ebook/carrinho/
+👉 https://medicinafora.site/ebook/carrinho/
 
 Notas
 - A diva é personagem, não cliente. Ela não diz que comprou nem dá depoimento.
