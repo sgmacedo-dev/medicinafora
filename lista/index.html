@@ -101,19 +101,15 @@
         </div>
 
 
-        <div class="lead-consent lead-consent-partners">
-          <label>
-            <input type="checkbox" id="consent_partners" name="consent_partners" value="true">
-            <span>Aceito ser contatado por parceiros da Medicina Fora (viagem e jurídico) sobre o que eu marcar abaixo.</span>
-          </label>
-        </div>
-
         <fieldset class="lead-field lead-ajuda">
           <legend>Preciso de ajuda com <span class="opt">(opcional)</span></legend>
-          <p class="lead-ajuda-note">Temas para parceiros de viagem e jurídico, se você aceitou o contato acima. Sem promessa de consultoria nem de resultado.</p>
+          <p class="lead-ajuda-note">Marque o que mais pesa agora. Isso ajuda a Medicina Fora a criar conteúdos e e-books úteis — sem consultoria e sem promessa de resultado.</p>
           <label class="lead-check"><input type="checkbox" name="ajuda_com" value="Passagem e mudança"> Passagem e mudança</label>
-          <label class="lead-check"><input type="checkbox" name="ajuda_com" value="Documentos e vistos"> Documentos e vistos</label>
           <label class="lead-check"><input type="checkbox" name="ajuda_com" value="Estudo e processo seletivo"> Estudo e processo seletivo</label>
+          <label class="lead-check"><input type="checkbox" name="ajuda_com" value="Moradia e custo de vida"> Moradia e custo de vida</label>
+          <label class="lead-check"><input type="checkbox" name="ajuda_com" value="Adaptação e idioma"> Adaptação e idioma</label>
+          <label class="lead-check"><input type="checkbox" name="ajuda_com" value="Dinheiro e renda no exterior"> Dinheiro e renda no exterior</label>
+          <label class="lead-check"><input type="checkbox" name="ajuda_com" value="Outro"> Outro</label>
         </fieldset>
 
         <div class="lead-consent">
@@ -201,13 +197,6 @@
     FORM.querySelectorAll('input[name="ajuda_com"]:checked').forEach(function (el) {
       ajuda.push(el.value);
     });
-    var consentPartners = document.getElementById("consent_partners").checked;
-    if (ajuda.length && !consentPartners) {
-      STATUS.hidden = false;
-      STATUS.className = "lead-status lead-status-err";
-      STATUS.textContent = "Para marcar ajuda com parceiros, aceite o contato por parceiros.";
-      return;
-    }
 
     var payload = {
       nome: document.getElementById("nome").value.trim(),
@@ -218,7 +207,6 @@
       whatsapp: document.getElementById("whatsapp").value.trim(),
       ajuda_com: ajuda,
       consent: document.getElementById("consent").checked,
-      consent_partners: consentPartners,
       website: document.getElementById("website").value,
       source: "lista"
     };

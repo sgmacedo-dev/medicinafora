@@ -1043,6 +1043,3 @@ a.compare-row:hover { color: inherit; background: rgba(255,253,248,.7); }
   accent-color: var(--accent);
   flex: none;
 }
-.lead-consent-partners {
-  background: #f8eeee;
-}
