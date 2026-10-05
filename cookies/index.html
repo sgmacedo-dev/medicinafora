@@ -4,22 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Política de cookies | Medicina Fora</title>
-<meta name="description" content="Cookies e conexões de terceiros no Medicina Fora: o que existe hoje, o que ainda não existe (analytics e AdSense) e como controlar no navegador.">
+<meta name="description" content="Cookies no Medicina Fora: banner de consentimento, categorias, Consent Mode e como mudar sua escolha. Cookies de publicidade do Google só entram com o seu ok.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0b3d3a">
 <link rel="canonical" href="https://medicinafora.site/cookies/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Política de cookies | Medicina Fora">
-<meta property="og:description" content="Estado atual de cookies no Medicina Fora e o que muda se o AdSense for ativado.">
+<meta property="og:description" content="Banner de cookies, categorias e como controlar publicidade no Medicina Fora.">
 <meta property="og:url" content="https://medicinafora.site/cookies/">
 <meta property="og:site_name" content="Medicina Fora">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Política de cookies | Medicina Fora">
-<meta name="twitter:description" content="Cookies no Medicina Fora: estado atual e controles do navegador.">
+<meta name="twitter:description" content="Cookies no Medicina Fora: banner, categorias e controles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/cookies.css">
+<script src="../js/cookies.js"></script>
 <script defer src="../js/main.js"></script>
 </head>
 <body>
@@ -51,7 +53,7 @@
   <section class="section">
     <div class="container prose">
       <p class="meta">Última atualização: 5 de outubro de 2026</p>
-      <p class="disclaimer" role="note">Descrevemos o estado atual do site, sem inventar ferramentas que ainda não estão instaladas. Não é aconselhamento jurídico.</p>
+      <p class="disclaimer" role="note">Descrevemos o estado atual do site. Não é aconselhamento jurídico.</p>
 
       <h2>O que são cookies</h2>
       <p>Cookies são pequenos arquivos que um site (ou um serviço de terceiros) pode gravar no seu navegador para lembrar preferências, manter uma sessão ou — em outros contextos — medir audiência e mostrar anúncios. Nem toda conexão com terceiros deixa cookie; às vezes há só uma requisição de rede (como carregar uma fonte).</p>
@@ -59,8 +61,13 @@
       <h2>Quem é responsável</h2>
       <p>Controlador: <strong>Silvana Gomes Macedo</strong>, projeto <strong>Medicina Fora</strong>. Contato: <a href="mailto:silvanagomesmacedo.dev.br@gmail.com">silvanagomesmacedo.dev.br@gmail.com</a>. A política completa de dados está em <a href="../privacidade/">Privacidade</a>.</p>
 
+      <h2>Banner de consentimento</h2>
+      <p>O Medicina Fora exibe um <strong>banner de cookies</strong> na primeira visita. Você pode <strong>Aceitar</strong>, <strong>Recusar</strong> ou abrir <strong>Preferências</strong> e ligar só a publicidade. Os cookies essenciais ficam sempre ativos. A escolha é guardada no seu navegador (localStorage), com versão e data. Para mudar depois, use o link <strong>Preferências de cookies</strong> no rodapé de qualquer página.</p>
+      <p>Usamos o <strong>Google Consent Mode v2</strong>: por padrão, armazenamento de anúncios e analytics fica <em>negado</em>. Só quando você aceita a publicidade o site atualiza o consentimento e, se o AdSense estiver configurado, o script do Google pode ser carregado. <strong>Cookies de publicidade do Google só entram com o seu consentimento.</strong></p>
+      <p>Visitantes do Espaço Econômico Europeu (EEE) e do Reino Unido podem ver também a <strong>mensagem certificada do Google</strong> (ferramenta “Privacidade e mensagens” do AdSense), quando ela estiver ativada no painel. O banner próprio do Medicina Fora cobre o público em geral, inclusive o Brasil (LGPD).</p>
+
       <h2>Estado atual (outubro 2026)</h2>
-      <p>Neste momento o Medicina Fora <strong>não</strong> carrega Google Analytics, Search Console tag de medição, nem script do Google AdSense. Também <strong>não</strong> há banner de consentimento de cookies, porque não instalamos cookies de publicidade ou analytics nossos. Se o AdSense for ativado no futuro, um aviso/banner deve acompanhar essa mudança e esta página será atualizada.</p>
+      <p>O banner e o Consent Mode já estão no ar. O <strong>Google AdSense ainda não está ligado</strong> no site: o carregador existe, mas só injeta o script depois do consentimento e quando houver um publisher ID configurado. Não há Google Analytics ativo. Quando o AdSense for ativado de fato, os anúncios só carregam se você tiver aceitado a categoria Publicidade.</p>
 
       <h2>Categorias</h2>
       <table>
@@ -74,32 +81,40 @@
         <tbody>
           <tr>
             <td><strong>Essenciais</strong></td>
-            <td>Possíveis / do host</td>
-            <td>O necessário para servir as páginas estáticas (GitHub Pages ou host equivalente). Podem existir cookies ou registros técnicos da infraestrutura. O menu mobile usa JavaScript local (<code>js/main.js</code>), sem cookie próprio nosso.</td>
+            <td>Ativos</td>
+            <td>Necessários para servir as páginas (GitHub Pages) e para lembrar sua escolha no banner (localStorage). O menu mobile usa JavaScript local (<code>js/main.js</code>). Sempre ligados; não dá para desligar sem quebrar o site.</td>
           </tr>
           <tr>
             <td><strong>Preferências</strong></td>
-            <td>Nenhum nosso</td>
-            <td>Não gravamos preferências de idioma, tema ou similares em cookie.</td>
+            <td>Só a escolha do banner</td>
+            <td>Guardamos Aceitar / Recusar / Publicidade on-off no navegador. Não há tema ou idioma em cookie.</td>
           </tr>
           <tr>
             <td><strong>Analytics</strong></td>
             <td>Nenhum</td>
-            <td>Não usamos Google Analytics nem ferramenta equivalente no repositório/site atual.</td>
+            <td>Não usamos Google Analytics. No Consent Mode, <code>analytics_storage</code> começa negado e só sobe se você aceitar (preparado para o futuro).</td>
           </tr>
           <tr>
             <td><strong>Publicidade</strong></td>
-            <td>Nenhuma ativa</td>
-            <td>AdSense <em>pode</em> ser ligado depois. Aí o Google poderá usar cookies e identificadores para anúncios, conforme a política dele. Hoje o script <strong>não</strong> está no site.</td>
+            <td>Opcional / AdSense preparado</td>
+            <td>Só com consentimento. Quando o AdSense estiver ativo e você aceitar, o Google pode usar cookies e identificadores para anúncios, conforme a política dele. Hoje o script <strong>não</strong> é injetado enquanto o publisher ID não estiver configurado e o AdSense não for ligado.</td>
           </tr>
         </tbody>
       </table>
+
+      <h2>Como mudar a escolha</h2>
+      <ol>
+        <li>No rodapé, clique em <a href="#" class="mf-cookie-prefs-link" data-mf-cookie-prefs>Preferências de cookies</a>.</li>
+        <li>Aceite, recuse ou ajuste o toggle de Publicidade e salve.</li>
+        <li>Ou limpe os dados do site no navegador — na próxima visita o banner aparece de novo.</li>
+      </ol>
 
       <h2>Google Fonts e outros terceiros</h2>
       <ul>
         <li><strong>Google Fonts</strong> — as páginas pedem tipografia em <code>fonts.googleapis.com</code> / <code>fonts.gstatic.com</code>. Isso é uma conexão de terceiros; pode ou não envolver cookies, mas o Google recebe a requisição.</li>
         <li><strong>Mercado Pago</strong> — se você for à página do e-book e pagar, o checkout roda no domínio do Mercado Pago, sob a política de privacidade e cookies dele. O MP é controlador dos dados de pagamento; a Medicina Fora só trata o que recebe para entregar o arquivo.</li>
         <li><strong>Wise</strong> — só se você clicar no link de convite; a partir daí vale a política da Wise.</li>
+        <li><strong>Google AdSense</strong> — só após consentimento de publicidade e quando o anúncio estiver ligado no site.</li>
       </ul>
 
       <h2>Como controlar no navegador</h2>
@@ -109,7 +124,7 @@
       <p>Para bases legais, retenção, direitos LGPD e compartilhamento, leia a <a href="../privacidade/">Política de privacidade</a>.</p>
 
       <h2>Mudanças</h2>
-      <p>Quando ativarmos publicidade ou analytics, atualizamos esta página, a data no topo e, se fizer sentido, o banner de consentimento.</p>
+      <p>Quando ativarmos o AdSense de fato ou analytics, atualizamos esta página e a data no topo.</p>
     </div>
   </section>
 </main>
@@ -129,9 +144,13 @@
       </ul>
     </div>
     <div>
-      <h2>E-book</h2>
+      <h2>E-books · R$ 5,20</h2>
       <ul>
-        <li><a href="../ebook/">Plano para morar fora: como se organizar! · R$ 5,20</a></li>
+        <li><a href="../ebook/">Plano para morar fora · R$ 5,20</a></li>
+        <li><a href="../ebook/casa-pronta/">A casa pronta · R$ 5,20</a></li>
+        <li><a href="../ebook/chegar-inteiro/">Chegar inteiro · R$ 5,20</a></li>
+        <li><a href="../ebook/10-dicas/">10 dicas para faturar · R$ 5,20</a></li>
+        <li><a href="../ebook/carrinho/">Leve mais de um</a></li>
       </ul>
     </div>
     <div>
@@ -140,6 +159,7 @@
         <li><a href="../lista/">Lista</a></li>
         <li><a href="../privacidade/">Privacidade</a></li>
         <li><a href="./" aria-current="page">Cookies</a></li>
+        <li><a href="#" class="mf-cookie-prefs-link" data-mf-cookie-prefs>Preferências de cookies</a></li>
         <li><a href="mailto:silvanagomesmacedo.dev.br@gmail.com">Contato</a></li>
       </ul>
     </div>
