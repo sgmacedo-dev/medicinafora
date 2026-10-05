@@ -4,8 +4,8 @@
 
   var STORAGE_KEY = "mf_cookie_consent";
   var CONSENT_VERSION = 1;
-  /** Publisher ID do AdSense. Vazio = loader inativo (AdSense desligado). */
-  var ADSENSE_PUB_ID = "";
+  /** Publisher ID do AdSense. Vazio = loader inativo. */
+  var ADSENSE_PUB_ID = 'ca-pub-2981303662156389';
 
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -114,7 +114,7 @@
       "</div>" +
       '<div class="mf-cookie-row">' +
       '<div class="mf-cookie-row-text"><strong>Publicidade / anúncios</strong>' +
-      "<span>Permite o Google AdSense mostrar anúncios (quando estiver ligado no site).</span></div>" +
+      "<span>Permite o Google AdSense mostrar anúncios.</span></div>" +
       '<label class="mf-cookie-toggle">' +
       '<input type="checkbox" id="mf-cookie-ad" name="advertising">' +
       '<span class="mf-cookie-toggle-ui" aria-hidden="true"></span>' +
