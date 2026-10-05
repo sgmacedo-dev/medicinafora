@@ -843,3 +843,73 @@ a.compare-row:hover { color: inherit; background: rgba(255,253,248,.7); }
   opacity: .55;
   cursor: not-allowed;
 }
+
+/* Citação-gatilho acima do CTA de compra */
+.cta-quote {
+  margin: 1.15rem 0 1rem;
+  padding: 1.05rem 1.15rem 1rem;
+  max-width: 36rem;
+  background: linear-gradient(135deg, #f3efe6 0%, #e7c9c4 100%);
+  border-radius: 18px;
+  border-left: 4px solid var(--bordeaux);
+  box-shadow: 0 10px 28px rgba(11, 61, 58, 0.06);
+}
+.cta-quote blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.cta-quote blockquote p {
+  margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 520;
+  font-optical-sizing: auto;
+  font-size: clamp(1.05rem, 2.6vw, 1.28rem);
+  line-height: 1.45;
+  color: #0b3d3a;
+  quotes: "“" "”" "‘" "’";
+}
+.cta-quote blockquote p::before {
+  content: open-quote;
+  color: var(--bordeaux);
+  font-weight: 640;
+  margin-right: .12em;
+}
+.cta-quote blockquote p::after {
+  content: close-quote;
+  color: var(--bordeaux);
+  font-weight: 640;
+  margin-left: .08em;
+}
+.cta-quote-bridge {
+  margin: .65rem 0 0;
+  font-family: var(--sans);
+  font-size: .92rem;
+  font-style: normal;
+  color: #0b3d3a;
+  opacity: .85;
+}
+.hero-actions .cta-quote,
+.hero-panel .cta-quote {
+  margin-top: 1rem;
+}
+.cart-summary .cta-quote {
+  margin: .85rem 0 0;
+  max-width: none;
+}
+.cart-summary .cta-quote + .btn-pay {
+  margin-top: .95rem;
+}
+#pagar .cta-quote {
+  margin: 1rem 0 1.05rem;
+}
+@media (max-width: 480px) {
+  .cta-quote {
+    padding: .95rem 1rem .9rem;
+    border-radius: 14px;
+  }
+  .cta-quote blockquote p {
+    font-size: 1.05rem;
+  }
+}
