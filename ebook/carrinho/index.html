@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="../../css/cookies.css">
 <script src="../../js/cookies.js"></script>
 <script defer src="../../js/main.js"></script>
+<script src="../../js/pix.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
@@ -103,10 +104,16 @@
             </blockquote>
             <p class="cta-quote-bridge">Esse passo começa por aqui.</p>
           </figure>
+          <label class="cart-email">Seu e-mail (os e-books chegam aqui)<input type="email" id="cart-email" required autocomplete="email" placeholder="voce@email.com"></label>
           <button class="btn btn-pay" type="submit" id="cart-pay">Pagar no Pix</button>
           <p id="cart-error" class="alert" hidden role="alert"></p>
         </div>
       </form>
+      <div class="pix-box" id="cart-pix" hidden></div>
+      <aside class="mp-parceria" aria-label="Parceria opcional Mercado Pago">
+        <span class="eyebrow-mini">Parceria · opcional, não é necessário para comprar</span>
+        <p>Ganhe R$ 20 de desconto no seu primeiro pagamento com o Mercado Pago (compra mínima de R$ 50, válido por 7 dias). Cartão, contas de consumo, recargas e Cofrinhos que rendem até 120% do CDI. <a href="https://mpago.li/29HRjHj" rel="sponsored noopener" target="_blank">Baixar o app do Mercado Pago</a>.</p>
+      </aside>
     </section>
 
     <section class="section">
@@ -217,24 +224,16 @@
       errEl.innerHTML = "<strong>Nada selecionado.</strong><p>Marque ao menos um e-book.</p>";
       return;
     }
+    var email = document.getElementById("cart-email").value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errEl.hidden = false;
+      errEl.innerHTML = "<strong>Falta o e-mail.</strong><p>Informe um e-mail válido. É para lá que os PDFs vão.</p>";
+      return;
+    }
     btn.disabled = true;
-    btn.textContent = "Abrindo o Pix…";
-    fetch(CHECKOUT, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ items: items }),
-    })
-      .then(function (res) {
-        return res.json().then(function (data) {
-          if (!res.ok) throw new Error((data && data.error) || "Falha no checkout");
-          return data;
-        });
-      })
-      .then(function (data) {
-        var url = data.init_point || data.sandbox_init_point;
-        if (!url) throw new Error("Link de pagamento ausente");
-        location.href = url;
-      })
+    btn.textContent = "Gerando o Pix…";
+    MFPix.create(items, email, document.getElementById("cart-pix"))
+      .then(function () { form.hidden = true; document.getElementById("cart-pix").scrollIntoView({ behavior: "smooth" }); })
       .catch(function (err) {
         errEl.hidden = false;
         errEl.innerHTML = "<strong>Não deu para abrir o pagamento.</strong><p>" +

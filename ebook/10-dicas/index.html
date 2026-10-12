@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="../../css/cookies.css">
 <script src="../../js/cookies.js"></script>
 <script defer src="../../js/main.js"></script>
+<script defer src="../../js/pix.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
@@ -113,10 +114,19 @@
         </blockquote>
         <p class="cta-quote-bridge">Esse passo começa por aqui.</p>
       </figure>
-      <p><a class="btn btn-pay" href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=14193672-48f50b69-42a2-4d52-9dee-9d85194b28d4">Pagar R$ 5,20</a></p>
+      <form class="pix-form" data-item="10-dicas" novalidate>
+        <label>Seu e-mail (o e-book chega aqui)<input type="email" name="email" required autocomplete="email" placeholder="voce@email.com"></label>
+        <button class="btn btn-pay" type="submit">Gerar Pix de R$ 5,20</button>
+        <p class="alert" hidden role="alert"></p>
+      </form>
+      <div class="pix-box" hidden></div>
       <p class="price-note">Quer mais de um? <a href="../carrinho/">Leve vários no mesmo Pix</a>.</p>
       <aside class="pitch wise-pitch">
         <p><strong>Dinheiro no dia a dia fora.</strong> A Wise costuma ter câmbio melhor que o do banco e um cartão aceito em grande parte do mundo. <a href="https://wise.com/invite/ahpc/silvanag203" rel="noopener noreferrer">Abrir conta na Wise</a>.</p>
+      </aside>
+      <aside class="mp-parceria" aria-label="Parceria opcional Mercado Pago">
+        <span class="eyebrow-mini">Parceria · opcional, não é necessário para comprar</span>
+        <p>Ganhe R$ 20 de desconto no seu primeiro pagamento com o Mercado Pago (compra mínima de R$ 50, válido por 7 dias). Cartão, contas de consumo, recargas e Cofrinhos que rendem até 120% do CDI. <a href="https://mpago.li/29HRjHj" rel="sponsored noopener" target="_blank">Baixar o app do Mercado Pago</a>.</p>
       </aside>
     </section>
 

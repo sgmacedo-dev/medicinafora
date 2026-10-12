@@ -1043,3 +1043,19 @@ a.compare-row:hover { color: inherit; background: rgba(255,253,248,.7); }
   accent-color: var(--accent);
   flex: none;
 }
+
+/* Pix direto */
+.pix-form{display:grid;gap:.6rem;max-width:26rem}
+.pix-form label,.cart-email{display:grid;gap:.3rem;font-weight:600}
+.pix-form input[type=email],.cart-email input{padding:.7rem .8rem;border:1px solid #c9d6d4;border-radius:.6rem;font:inherit}
+.pix-qr{display:grid;gap:.7rem;justify-items:start;max-width:26rem;padding:1.1rem;border:1px solid #d7e3e1;border-radius:1rem;background:#fff;margin-top:1rem}
+.pix-qr img{width:240px;height:240px;image-rendering:pixelated}
+.pix-steps{margin:0;padding-left:1.2rem}
+.pix-code-label{display:grid;gap:.3rem;width:100%;font-size:.9rem}
+.pix-code{width:100%;font:.8rem/1.3 monospace;padding:.5rem;border:1px solid #c9d6d4;border-radius:.5rem;resize:none}
+.pix-status{font-size:.92rem;opacity:.8}
+.pix-ok{padding:1.1rem;border-radius:1rem;background:#e8f6ef;border:1px solid #9fd3b6;margin-top:1rem}
+/* Parceria Mercado Pago (opcional) */
+.mp-parceria{margin:1.2rem 0;padding:.85rem 1rem;border:1px dashed #b9cfcc;border-radius:.9rem;font-size:.92rem;background:#f7fbfa}
+.mp-parceria .eyebrow-mini{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;opacity:.65;margin-bottom:.2rem}
+.mp-parceria p{margin:0}
