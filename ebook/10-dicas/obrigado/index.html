@@ -32,7 +32,7 @@ const id = params.get("payment_id") || params.get("collection_id");
 const link = document.getElementById("baixar");
 const msg = document.getElementById("msg");
 if (id) {
-  link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/baixar?payment_id=" + encodeURIComponent(id);
+  link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/link?payment_id=" + encodeURIComponent(id);
   link.hidden = false;
   msg.textContent = "Se o Pix já foi aprovado, o PDF de 10 dicas para faturar, mesmo com a agenda lotada segue para o e-mail do Mercado Pago. O botão tenta o download bônus.";
 }

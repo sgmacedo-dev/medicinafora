@@ -31,7 +31,7 @@
     setTimeout(function () {
       fetch(API + "/status?id=" + encodeURIComponent(id)).then(function (r) { return r.json(); }).then(function (d) {
         if (d.status === "approved") {
-          box.innerHTML = '<div class="pix-ok" role="status"><h3>Pagamento confirmado!</h3><p>O e-book chega no seu e-mail em instantes. Confira também a caixa de spam.</p></div>';
+          box.innerHTML = '<div class="pix-ok" role="status"><h3>Pagamento confirmado!</h3><p>O e-book chega no seu e-mail em instantes. Confira também a caixa de spam.</p>' + (d.download_url ? '<p><a class="btn" href="' + d.download_url + '">Baixar agora</a></p>' : '') + '</div>';
         } else if (d.status === "rejected" || d.status === "cancelled") {
           box.querySelector(".pix-status").textContent = "Este Pix expirou ou foi cancelado. Gere um novo código.";
         } else poll(box, id, n + 1);

@@ -38,7 +38,7 @@ const link = document.getElementById("baixar");
 if (!id) {
   msg.textContent = "O Pix ainda pode estar caindo. O(s) arquivo(s) seguem para o e-mail que você informou no Mercado Pago.";
 } else {
-  link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/baixar?payment_id=" + encodeURIComponent(id);
+  link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/link?payment_id=" + encodeURIComponent(id);
   link.hidden = false;
   msg.textContent = "Se o Pix já foi aprovado, o e-mail com o(s) PDF(s) é o principal. O botão abaixo tenta o download bônus (um arquivo por vez; pedidos com vários livros lembram o e-mail).";
 }
