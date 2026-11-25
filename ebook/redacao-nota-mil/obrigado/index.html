@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="google-adsense-account" content="ca-pub-2981303662156389">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagamento recebido | Medicina Fora</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../../../css/style.css">
+<link rel="stylesheet" href="../../../css/cookies.css">
+<script src="../../../js/cookies.js"></script>
+</head>
+<body>
+<main class="container section" style="padding-top:2.5rem;max-width:40rem">
+  <h1>Pagamento recebido</h1>
+  <p id="msg">Se o Pix for aprovado, o PDF de <strong>Redação nota mil: dicas e sugestões para se sair bem no Enem</strong> chega no e-mail que você informou no Mercado Pago. Esse é o caminho principal.</p>
+  <p><a class="btn" id="baixar" hidden>Baixar o PDF (bônus)</a></p>
+  <p>Confira também a caixa de spam. Qualquer dúvida, escreva para silvanagomesmacedo.dev.br@gmail.com.</p>
+  <p><a href="../../carrinho/">Levar mais e-books</a> · <a href="../">Voltar a este livro</a></p>
+
+  <aside class="lista lista-cta obrigado-lista">
+    <p class="eyebrow kicker-light">Lista · comunidade</p>
+    <h2>Fique por perto</h2>
+    <p>Entre na lista da Medicina Fora e receba conteúdo e ofertas dos e-books.</p>
+    <a class="btn" href="../../../lista/">Entrar na lista</a>
+  </aside>
+
+</main>
+<script>
+const params = new URLSearchParams(location.search);
+const id = params.get("payment_id") || params.get("collection_id");
+const link = document.getElementById("baixar");
+const msg = document.getElementById("msg");
+if (id) {
+  link.href = "https://jolly-cell-74c0.enzo-toysreview.workers.dev/link?payment_id=" + encodeURIComponent(id);
+  link.hidden = false;
+  msg.textContent = "Se o Pix já foi aprovado, o PDF de Redação nota mil: dicas e sugestões para se sair bem no Enem segue para o e-mail do Mercado Pago. O botão tenta o download bônus.";
+}
+</script>
+</body>
+</html>

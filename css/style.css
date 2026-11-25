@@ -379,6 +379,7 @@ h1, h2, h3, .brand-title, .price {
 .price-row { display: flex; align-items: baseline; gap: .7rem; margin: 1.1rem 0 .3rem; flex-wrap: wrap; }
 .price { font-size: clamp(2.6rem, 6vw, 3.6rem); color: var(--bordeaux); }
 .price-note { color: var(--muted); font-size: .95rem; }
+.price-note.fine-print { font-size: .8rem; line-height: 1.45; margin-top: .9rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.15rem; }
 
 .still {
