@@ -1060,3 +1060,7 @@ a.compare-row:hover { color: inherit; background: rgba(255,253,248,.7); }
 .mp-parceria{margin:1.2rem 0;padding:.85rem 1rem;border:1px dashed #b9cfcc;border-radius:.9rem;font-size:.92rem;background:#f7fbfa}
 .mp-parceria .eyebrow-mini{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;opacity:.65;margin-bottom:.2rem}
 .mp-parceria p{margin:0}
+
+.page-title.guia-title h1 { max-width: 32ch; }
+.prose .alert { margin: 1.2rem 0; }
+.prose .alert h2, .prose .alert h3 { color: inherit; }
